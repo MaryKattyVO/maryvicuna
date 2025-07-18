@@ -27,7 +27,7 @@ export class AboutComponent {
   get cvFile(): string {
     const lang = this.langService.currentLang;
     return lang === 'es'
-      ? 'assets/cv/CV-ES-Mary-Vicuna.pdf'
-      : 'assets/cv/CV-EN-Mary-Vicuna.pdf';
+      ? 'assets/cv/CV-ES-Mary-Katty-Vicuna-Ore.pdf'
+      : 'assets/cv/CV-EN-Mary-Katty-Vicuna-Ore.pdf';
   }
 }
