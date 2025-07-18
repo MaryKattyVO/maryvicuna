@@ -1,0 +1,366 @@
+{
+  "menu": {
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "projects": "Projects",
+    "education": "Education",
+    "contact": "Contact"
+  },
+  "about": {
+    "greeting": "Hi, I'm",
+    "name": "Mary Vicuna",
+    "role": "Frontend Developer",
+    "description": "Passionate about creating intuitive, engaging, and high-quality digital experiences. Over 5 years of experience building modern web solutions.",
+    "cv": "Download CV",
+    "file": "assets/cv/CV-EN-Mary-Vicuna.pdf"
+  },
+  "skills": {
+    "title": "Skills",
+    "subtitle": "These are some of the technologies and tools I've worked with throughout my career as a frontend developer.",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "devops": "DevOps",
+      "testing": "Testing",
+      "others": "Others"
+    }
+  },
+  "experience": {
+    "title": "Experience",
+    "subtitle": "These are the most relevant professional experiences I've had in recent years.",
+    "list": [
+      {
+        "title": "TATA",
+        "subtitle": "Frontend Developer",
+        "date": "September 2021 – Present",
+        "logo": "assets/img/tata.jpg",
+        "sections": [
+          {
+            "company": "Clinica Internacional",
+            "description": [
+              "Lead frontend developer, actively collaborating and coordinating with cross-functional teams.",
+              "Developed a web app system for kiosks implemented across all clinic locations, allowing patients to check-in and pay for appointments using Angular 16, microfrontends, and module federation.",
+              "Built a Backoffice web system for administrative staff to view transactions, cancel payments when needed, and generate reports — developed using Angular 16, microfrontends, and module federation.",
+              "Integrated Izipay payment platform and real-time statistics.",
+              "Implemented and configured Google Tags for user behavior tracking and analysis.",
+              "Automated deployments using Google Cloud.",
+              "Documented all development processes, flows, and validations in Confluence.",
+              "Worked under the Agile SCRUM framework."
+            ]
+          },
+          {
+            "company": "Interbank – Business Banking",
+            "description": [
+              "Developed balance and transaction modules for the Business Banking web system using Angular 16.",
+              "Built MT940 module to check the status of received and processed files.",
+              "Led UI rebranding efforts for the banking web system using Angular Material.",
+              "Automated deployments with Azure.",
+              "Worked under the Agile SCRUM framework."
+            ]
+          },
+          {
+            "company": "Interbank – Personal Banking",
+            "description": [
+              "Developed a loan prepayment module allowing clients to pay down loans online without visiting the bank — implemented with Vue.js.",
+              "Built CIAM login for secure identity and access management.",
+              "Implemented SSO to allow app users to access the loan and term deposit features on the web using a single token.",
+              "Integrated Adobe Analytics to track customer interaction across modules.",
+              "Planned the migration of the web system from Vue.js to Angular.",
+              "Implemented end-to-end tests with Cypress to automate interactions and flows.",
+              "Resolved security vulnerabilities identified by FluidAttacks.",
+              "Documented development tasks, validations, and flows in Confluence.",
+              "Worked under the Agile SCRUM framework."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "VASS",
+        "subtitle": "Developer",
+        "date": "January 2020 – April 2021",
+        "logo": "assets/img/vass.jpg",
+        "sections": [
+          {
+            "company": "Movistar",
+            "description": [
+              "Developed a converged web system for registering Movistar services such as internet and mobile package sales.",
+              "Created a Backoffice system to view and approve different types of requests submitted through the converged system.",
+              "Deployed to QA, development, and production environments using Cloud Foundry pipelines on IBM Cloud.",
+              "Analyzed data, generated error tracking reports, and executed SQL queries in PostgreSQL.",
+              "Worked under the Agile SCRUM framework."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Caleidos",
+        "subtitle": "Frontend Developer",
+        "date": "December 2018 – December 2019",
+        "logo": "assets/img/caleidos.jpg",
+        "sections": [
+          {
+            "company": "",
+            "description": [
+              "Built a web system for Linkminers, enabling mining professionals to access innovative solutions and suppliers to expand their offerings — developed with Vue.js.",
+              "Developed an LMS platform for Alicorp, Mi Banco, and VitaPro, allowing users to upload courses and manage employee training.",
+              "Handled automatic deployments to AWS across QA, development, and production environments.",
+              "Worked under the Agile SCRUM framework."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Cybermach",
+        "subtitle": "IT Technician",
+        "date": "January 2017 – November 2017",
+        "logo": "assets/img/cibermach.jpg",
+        "sections": [
+          {
+            "company": "",
+            "description": [
+              "Built an inventory control system enabling accurate tracking and efficient stock management using Java and SQL Server.",
+              "Performed software installation and maintenance based on analysis and requirements, ensuring operational efficiency.",
+              "Installed and maintained network cabling to optimize connectivity and IT infrastructure performance."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Grupo Rosales",
+        "subtitle": "IT Technician",
+        "date": "September 2015 – December 2015",
+        "logo": "assets/img/rosales.png",
+        "sections": [
+          {
+            "company": "",
+            "description": [
+              "Developed a billing and inventory system for hardware products using SQL Server and Java, enabling accurate sales records and stock management.",
+              "Maintained and configured the Monica 9 accounting system to ensure reliable financial operations.",
+              "Installed and maintained software as per requirements to ensure operational continuity.",
+              "Installed and maintained network cabling to optimize infrastructure performance."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "description": "My featured projects completed recently.",
+    "showMore": "Show more",
+    "webSite": "Website",
+    "list": [
+      {
+        "title": "Totem Clinica",
+        "description": "Self-service application for patient check-in and payments.",
+        "resena": "This is a web app developed for the kiosks installed in various branches of Clínica Internacional del Perú, allowing patients to perform check-in and pay for their appointments through a single, integrated module.The application was built as a single project within a monorepo, using Webpack Module Federation as the foundation for a modular and scalable architecture.It was developed with Angular 16 and integrates the Izipay payment system.An agile methodology was applied throughout the project, enabling iterative deliveries and effective collaboration between development teams.",
+        "period": "September 2024 – February 2025",
+        "image": "assets/img/totem-home.jpg",
+        "tags": ["Angular16", "TypeScript", "Ngrx", "Rxjs", "AzureDevops", "Google Cloud", "Google Analytics", "Microfront"],
+        "liveUrl": "https://clinicainternacional.com.pe/",
+        "images": [
+          "assets/img/totem-1.jpg",
+          "assets/img/totem-2.svg",
+          "assets/img/totem-3.svg",
+          "assets/img/totem-4.svg",
+          "assets/img/totem-5.svg",
+          "assets/img/totem-6.svg",
+          "assets/img/totem-7.svg",
+          "assets/img/totem-8.svg"
+        ]
+      },
+      {
+        "title": "Backoffice - Clínica Internacional",
+        "description": "Backoffice system for managing paid appointments, viewing transactions, generating reports, and payment cancellations.",
+        "resena": "This is a web app developed for Clínica Internacional, designed for admission staff to view appointment payment transactions and their statuses (paid or declined). It is integrated with the Izipay API, allowing payments to be voided in case of any issues. Staff can generate both detailed and summary reports, and only see transactions from the kiosks assigned to them based on their location and floor. The application was built from a monorepo project, using Webpack Module Federation as the foundation for a modular and scalable architecture. An agile methodology was applied throughout the process, enabling iterative deliveries and effective collaboration among development teams.",
+        "period": "March 2025 – April 2025",
+        "image": "assets/img/backoffice-login.svg",
+        "tags": ["Angular16", "TypeScript", "Ngrx", "Rxjs", "AzureDevops", "Google Cloud", "Google Analytics", "Microfront", "Git"],
+        "liveUrl": "https://clinicainternacional.com.pe/",
+        "images": [
+          "assets/img/bo-ci-1.svg",
+          "assets/img/bo-ci-2.svg",
+          "assets/img/bo-ci-4.svg",
+          "assets/img/bo-ci-5.svg",
+          "assets/img/bo-ci-6.svg"
+        ]
+      },
+      {
+        "title": "Consolidated Balances and Transactions - Interbank Business",
+        "description": "Web system allowing business clients to check their consolidated account balances and transactions.",
+        "resena": "This is a web app developed for Interbank Empresas, allowing corporate clients to view transaction movements and balances related to payments made to their employees or suppliers. It was built using Angular 14, with deployments handled through Azure Cloud, following a modular architecture. Unit tests were implemented to ensure software quality, and the project was managed using an agile methodology, enabling iterative deliveries and continuous team collaboration.",
+        "period": "January 2024 – March 2024",
+        "image": "assets/img/interbank-empresa-saldos.svg",
+        "tags": ["Angular14", "TypeScript", "Ngrx", "Rxjs", "Azure Cloud", "Karma", "Jasmine", "Adobe Analytics"],
+        "liveUrl": "https://empresas.interbank.pe/login",
+        "images": [
+          "assets/img/saldo-mov-2.svg",
+          "assets/img/saldo-mov-3.svg",
+          "assets/img/saldo-mov-4.jpg",
+          "assets/img/saldo-mov-5.svg",
+          "assets/img/saldo-mov-6.svg"
+        ]
+      },
+      {
+        "title": "MT940 Accounts Module - Interbank Business Intranet",
+        "description": "Intranet system for business clients to download and search their MT940 account statements.",
+        "resena": "This is a web app developed for Interbank Empresas, designed exclusively for use by bank employees. It allows them to verify, filter by date, generate reports, and add accounts to monitor MT940 files of corporate accounts. It was developed using Angular 14, with deployments carried out on Azure Cloud, following a modular architecture. Unit tests were implemented to ensure software quality, and the project was managed using an agile methodology, enabling iterative deliveries and continuous team collaboration.",
+        "period": "March 2024 – August 2024",
+        "image": "assets/img/intranet-MT940.svg",
+        "tags": ["Angular14", "TypeScript", "Ngrx", "Rxjs", "Azure Cloud", "Karma", "Jasmine", "Adobe Analytics" ],
+        "liveUrl": "https://empresas.interbank.pe/login",
+        "images": [
+          "assets/img/mt-1.svg",
+          "assets/img/mt-2.svg",
+          "assets/img/mt-3.svg",
+          "assets/img/mt-4.jpg"
+        ]
+      },
+      {
+        "title": "Loan Prepayment - Interbank Personal",
+        "description": "Web system allowing clients to prepay loans online, eliminating the need to visit a branch.",
+        "resena": "This is a web app developed for Interbank Personas, allowing customers to make loan installment payments without the need to visit the bank. It was developed using Vue.js, with end-to-end testing implemented using Cypress, and Adobe Analytics integrated to track user interactions. The application follows a modular architecture for better scalability and maintainability.The project was managed using an agile methodology, enabling iterative deliveries and smooth collaboration across teams.",
+        "period": "September 2021 – December 2024",
+        "image": "assets/img/interbank-persona.jpg",
+        "tags": ["Vue.js", "Azure Cloud", "Cipress", "Tailwind CSS", "Adobe Analytics", "New Relic"],
+        "liveUrl": "https://bancaporinternet.interbank.pe/login#/login",
+        "images": [
+          "assets/img/interbank-persona.jpg"
+        ]
+      },
+      {
+        "title": "Login - Interbank Personal",
+        "description": "Implementation of CIAM (Customer Identity and Access Management) for web client authentication.",
+        "resena": "This is a web app developed for Interbank Personas, allowing customers to make loan payments. A login system based on CIAM (Customer Identity and Access Management) was implemented to ensure secure, scalable authentication aligned with standards like OAuth2 and OpenID Connect. The application follows a modular architecture, was developed using Vue.js, includes end-to-end testing with Cypress, and integrates Adobe Analytics to track user behavior. The project was managed using an agile methodology, enabling iterative deliveries and continuous collaboration across teams.",
+        "period": "September 2021 – December 2024",
+        "image": "assets/img/interbank-login.jpg",
+        "tags": ["Vue.js", "Azure Cloud", "Cipress", "Tailwind CSS", "Adobe Analytics","New Relic"],
+        "liveUrl": "https://bancaporinternet.interbank.pe/login#/login",
+        "images": [
+          "assets/img/login-1.jpg",
+          "assets/img/login-2.jpg",
+          "assets/img/login-3.jpg",
+          "assets/img/login-4.jpg",
+          "assets/img/login-5.jpg",
+          "assets/img/login-6.jpg"
+        ]
+      },
+      {
+        "title": "Convergent Web - Movistar",
+        "description": "Web system for viewing offers and benefits, selecting and activating Movistar products.",
+        "resena": "This is a web app developed for the telecommunications company Movistar, allowing users to subscribe to and unify their Home and Mobile services into a single package called Movistar Total, with the goal of accessing better benefits, promotions, and exclusive discounts. It was developed using Angular 12, following a modular architecture, with deployments carried out through Cloud Foundry using IBM Cloud pipelines. The project was managed using an agile methodology, which enabled continuous deliveries and effective collaboration among development teams.",
+        "period": "January 2021 – April 2022",
+        "image": "assets/img/movistar-home.jpg",
+        "tags": ["Angular12", "TypeScript", "Ngrx", "Rxjs", "IBM Cloud", "Karma", "Jasmine", "Adobe Analytics", "SqlServer"],
+        "liveUrl": "https://movistaronline.pe/hogar/movistar-total",
+        "images": [
+          "assets/img/movistar-home.jpg",
+          "assets/img/mo-1.png",
+          "assets/img/mo-2.png",
+          "assets/img/mo-3.png",
+          "assets/img/mo-4.png",
+          "assets/img/mo-5.png",
+          "assets/img/mo-6.png",
+          "assets/img/mo-7.png"
+        ]
+      },
+      {
+        "title": "BackOffice - Movistar",
+        "description": "Web system to manage offers and benefits for activating Movistar products.",
+        "period": "January 2021 – April 2022",
+        "resena": "This is a web app developed for the telecommunications company Movistar. It is a web-based system that allows users to easily view offers and benefits, as well as select and activate Movistar products. The application was developed using Angular 12, following a modular architecture, with deployments carried out through Cloud Foundry using IBM Cloud pipelines. The project was managed under an agile methodology, enabling continuous deliveries and effective collaboration among development teams.",
+        "image": "assets/img/backoffice-movistar.jpg",
+        "tags": ["Angular12", "TypeScript", "Ngrx", "Rxjs", "IBM Cloud", "Karma", "Jasmine", "Adobe Analytics"],
+        "liveUrl": "https://movistaronline.pe/hogar/movistar-total",
+        "images": [
+          "assets/img/lma-mo-1.png",
+          "assets/img/lma-mo-2.png",
+          "assets/img/lma-mo-3.png",
+          "assets/img/lma-mo-4.png",
+          "assets/img/lma-mo-5.png",
+          "assets/img/lma-mo-6.png",
+          "assets/img/lma-mo-7.png",
+          "assets/img/lma-mo-8.png"
+        ]
+      },
+      {
+        "title": "LinkMiners",
+        "description": "Web system for the mining industry that manages projects, resources, and tasks for mining officials and suppliers.",
+        "resena": "This is a web app developed for the mining sector, designed as a management system for projects, resources, and tasks, targeting both mining industry personnel and supplier companies. Built with Vue.js, the application includes unit testing with Karma and Jasmine, and deployments were handled through Amazon CloudFront. The project was managed using an agile methodology, which enabled continuous deliveries and smooth collaboration among the various development teams.",
+        "period": "December 2018 – March 2019",
+        "image": "assets/img/linkminers-home.jpg",
+        "tags": ["Vue.js", "Bootstrap", "AWS Cloud", "Karma", "Jasmine"],
+        "liveUrl": "https://www.linkminers.com/",
+        "images": [
+          "assets/img/linkminers-home.jpg",
+          "assets/img/miners-1.svg",
+          "assets/img/miners-3.svg"
+        ]
+      },
+      {
+        "title": "LMS - VitaPro",
+        "description": "Learning Management System (LMS) for employee training and development.",
+        "resena": "This is a Learning Management System (LMS) developed for employee training and development, based on the Moodle platform. The system was customized using JavaScript, HTML, and CSS to tailor the user interface and functionalities to the organization’s specific needs. In addition, integrations and plugin configurations were implemented to optimize learning workflows and enhance the user experience. The application was deployed in an environment compatible with PHP and MySQL, and Amazon CloudFront was used as a CDN to deliver static content and improve overall system performance. The project was managed using an agile methodology, enabling continuous deliveries, iterative improvements, and effective collaboration among multidisciplinary teams.",
+        "period": "December 2018 – March 2019",
+        "image": "assets/img/vitapro-lms.svg",
+        "tags": ["JS", "HTML", "CSS", "Moodle","AWS Cloud"],
+        "liveUrl": "https://vitapro.com.pe/nosotros/",
+        "images": [
+          "assets/img/vitapro-lms.svg",
+          "assets/img/vita-1.jpg",
+          "assets/img/vita-2.jpg",
+          "assets/img/vita-3.jpg",
+          "assets/img/vita-4.jpg",
+          "assets/img/vita-5.jpg",
+          "assets/img/vita-6.jpg"
+        ]
+      }
+    ]
+  },
+  "education": {
+    "title": "Education",
+    "subtitle": "My academic background has allowed me to keep growing and discovering new knowledge. Below is a summary of my academic training.",
+      "list": [
+        {
+          "title": "Peruvian British Cultural Association",
+          "subtitle": "English",
+          "date": "July 2021 - July 2023",
+          "description": "Studying at Británico allowed me to develop English language skills through a communicative approach, enabling me to participate in technical meetings, understand documentation, write professional emails, and collaborate with international teams.",
+          "logo": "assets/img/britanico.png"
+        },
+        {
+          "title": "Laboratoria",
+          "subtitle": "Frontend Developer Specialist",
+          "date": "May 2018 - November 2018",
+          "description": "At Laboratoria I strengthened my frontend profile through an intensive bootcamp focused on JavaScript, HTML5, and CSS3. I worked on real-world projects using modern frameworks like Angular and Vue.js, and participated in hackathons for companies like the Lima Stock Exchange and BCP. I enhanced my skills in teamwork, agile methodologies like Scrum, version control with Git, and user experience (UX) design. This stage was essential in developing critical thinking, technical autonomy, and practical abilities directly applicable to real work environments.",
+          "logo": "assets/img/laboratoria.png"
+        },
+        {
+          "title": "Universidad Católica Sedes Sapientiae",
+          "subtitle": "Computer Engineering",
+          "date": "March 2011 - December 2016",
+          "description": "During my studies at UCSS, I acquired strong knowledge in computer science and software development. I learned languages such as Java, C#, and assembly, as well as fundamentals in programming logic and data structures. I studied applied mathematics, physics, computer architecture, and machine language. I also trained in databases like SQL Server, MySQL, and Oracle, as well as web technologies such as HTML, CSS, and JavaScript. This comprehensive technical education laid the foundation for my career as a frontend developer.",
+          "logo": "assets/img/ucss.jpg"
+        }
+      ]
+  },
+  "contact": {
+    "title": "Contact Me 🚀",
+    "subtitle": "I'm available for opportunities, projects, and coffee ☕",
+    "linkedin": "LinkedIn",
+    "email": "mkvicunaore.com",
+    "github": "GitHub"
+  },
+  "footer": {
+    "name": "Mary Vicuna",
+    "nav": {
+      "about": "About",
+      "skills": "Skills",
+      "experience": "Experience",
+      "projects": "Projects",
+      "education": "Education"
+    },
+    "copy": "All rights reserved."
+  }
+}
