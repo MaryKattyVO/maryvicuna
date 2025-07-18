@@ -1,0 +1,52 @@
+<section id="projects" class="portfolio-section">
+  <div class="container">
+    <div class="section-info">
+      <h2>{{ t('projects.title') }}</h2>
+      <p class="portfolio-first-desc">{{ t('projects.description') }}</p>
+    </div>
+
+    <div class="projects" appFade>
+      @for (project of limitedProjects; track project) {
+        <div class="project-card" (click)="openModal(project)">
+          <img [src]="project.image" alt="{{ project.title }}" class="project-image" />
+
+          <div class="tags">
+            @for (tag of project.tags; track tag) {
+              <span class="tag">{{ tag }}</span>
+            }
+          </div>
+
+          <h3 >{{ project.title }}</h3>
+          <p class="period">{{ project.period }}</p>
+          <p class="description">{{ project.description }}</p>
+
+        @if (project.collaborators?.length) {
+        <div class="collaborators">
+          @for (avatar of project.collaborators; track avatar) {
+            <img [src]="avatar" class="avatar" />
+          }
+        </div>
+        }
+        </div>
+      }
+    </div>
+    @if (projects.length > visibleCount) {
+      <div class="show-more-wrapper">
+        <button class="show-more-btn" (click)="showMore()">{{ t('projects.showMore') }}</button>
+      </div>
+    }
+
+    <app-modal
+      [show]="modalVisible"
+      [project]="selectedProject"
+      (close)="closeModal()">
+    </app-modal>
+  </div>
+
+</section>
+
+
+
+
+
+

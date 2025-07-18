@@ -1,0 +1,23 @@
+<section  id="about" class="hero-section">
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1 appFade>
+        {{ t('about.greeting') }}
+        <br>
+        {{ t('about.name') }}
+      </h1>
+      <h2 appFade>{{ t('about.role') }}</h2>
+      <p appFade>
+        {{ t('about.description') }}
+      </p>
+      <a class="btn-primary" [href]="cvFile" target="_blank" appFade>{{ t('about.cv') }}</a>
+    </div>
+
+    <div class="hero-img" appFade>
+      <img
+        src="assets/img/profile-mary.png"
+        alt="Foto de Mary Vicuña"
+      />
+    </div>
+  </div>
+</section>

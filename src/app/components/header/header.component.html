@@ -1,0 +1,51 @@
+<header id="#" appScroll toogleClass="sticky" [activateOn]="1">
+  <nav class="navigation">
+    <div class="navigation-content">
+      <a class="logo" href="#">
+        <div class="accent">&lt;</div>
+        <span>Mary</span>
+        <div class="accent">/</div>
+        <span>Vicuña</span>
+        <div class="accent">&gt;</div>
+      </a>
+      <svg class="btn-menu" (click)="openSidenav()" xmlns="http://www.w3.org/2000/svg" height="1.5em"
+        viewBox="0 0 448 512" fill="currentColor">
+        <path
+          d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+      </svg>
+      <div class="nav-desktop">
+        <ul class="nav-list">
+          @for (item of navItems; track item) {
+            <li class="nav-item">
+              <a class="link"
+                href="#{{ item.link }}"
+                (click)="scrollToSection(item.link)"
+                [class.active]="activeSection === item.link">
+                {{ t('menu.' + item.link) }}
+              </a>
+            </li>
+          }
+        </ul>
+        <div class="language-switcher">
+          <span
+            class="lang-option"
+            [class.active]="langService.currentLang === 'es'"
+            (click)="switchLang('es')"
+          >
+            ES
+          </span>
+          /
+          <span
+            class="lang-option"
+            [class.active]="langService.currentLang === 'en'"
+            (click)="switchLang('en')"
+          >
+            EN
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<app-sidenav [isOpen]="sidenavState === 'in'" (onClose)="closeSidenav()" class="mobile-only"></app-sidenav>

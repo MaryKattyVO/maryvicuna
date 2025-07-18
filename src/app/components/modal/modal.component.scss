@@ -1,0 +1,153 @@
+@use './styles/media-queries' as media;
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-container {
+  background-color: #1f1f2e;
+  border-radius: 1rem;
+  width: 90%;
+  max-width: 850px;
+  max-height: 95vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+  padding: 1.5rem;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+  animation: fadeIn 0.3s ease;
+  display: flex;
+  flex-direction: column;
+
+  .modal-header {
+    margin-top: 2rem;
+    flex-shrink: 0;
+  }
+
+  .modal-body {
+    flex: 1;
+    margin-top: 1.5rem;
+  }
+}
+
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: transparent;
+  border: none;
+  color: #ffff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.modal-body {
+  color: #ffff;
+
+  .title {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 12px 0;
+    text-align: left;
+    color: rgb(242, 243, 244);
+    @include media.respond-below(md) {
+      font-size: 24px;
+    }
+  }
+
+  .description {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(242, 243, 244);
+    margin: 8px 6px;
+    text-align: left;
+    @include media.respond-below(md) {
+      font-size: 14px;
+    }
+  }
+
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+
+    .tag {
+      background-color: #2e2e4d;
+      color: #a259ff;
+      padding: 0.4rem 0.8rem;
+      border-radius: 999px;
+      font-size: 0.75rem;
+    }
+  }
+
+  .actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    justify-content: center;
+
+    .btn {
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: all 0.3s ease;
+
+      &.code {
+        background: #2e2e4d;
+        color: #ffff;
+        &:hover {
+          background: #46466b;
+        }
+      }
+
+      &.live {
+        background: #7f56d9;
+        color: #ffff;
+        &:hover {
+          background: #5c3cb0;
+        }
+      }
+    }
+  }
+}
+
+.modal-header {
+  margin-top: 2.5rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@include media.respond-below(md) {
+  .modal-container {
+    width: 95%;
+    padding: 1rem;
+  }
+
+  .carousel .viewbox {
+    height: 50vh;
+  }
+}
+

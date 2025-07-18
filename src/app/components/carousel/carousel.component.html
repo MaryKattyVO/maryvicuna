@@ -1,0 +1,17 @@
+<div class="carousel">
+  <div class="viewbox" #viewbox>
+    <div class="content" [style.transform]="'translateX(' + position + 'px)'" #content>
+      <div class="slide" *ngFor="let img of images">
+        <img [src]="img" alt="Slide image" />
+      </div>
+    </div>
+  </div>
+
+  <div class="progress-dots">
+    <div class="dot-wrapper" *ngFor="let dot of navigationDots; index as i" (click)="scrollTo(i)">
+      <div class="progress-dot" [class.active]="i === currentDot">
+        <div class="filler" [style.width.%]="i === currentDot ? progress : (i < currentDot ? 100 : 0)"></div>
+      </div>
+    </div>
+  </div>
+</div>

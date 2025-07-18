@@ -1,0 +1,36 @@
+<div
+  class="sidenav-overlay"
+  [@slideInOut]="animationState"
+>
+  <div class="sidenav-header">
+    <button class="close-btn" (click)="close()">X</button>
+  </div>
+  <div class="sidenav-body">
+    <div class="language-switcher">
+      <span
+        class="lang-option"
+        [class.active]="langService.currentLang === 'es'"
+        (click)="switchLang('es')"
+      >
+        ES
+      </span>
+      /
+      <span
+        class="lang-option"
+        [class.active]="langService.currentLang === 'en'"
+        (click)="switchLang('en')"
+      >
+        EN
+      </span>
+    </div>
+    <ul class="sidenav-list">
+      <li><a href="#about" (click)="close()"> {{ t('menu.about')}}</a></li>
+      <li><a href="#skills" (click)="close()">{{ t('menu.skills')}}</a></li>
+      <li><a href="#experience" (click)="close()">{{ t('menu.experience')}}</a></li>
+      <li><a href="#projects" (click)="close()">{{ t('menu.projects')}}</a></li>
+      <li><a href="#education" (click)="close()">{{ t('menu.education')}}</a></li>
+      <li><a href="#contacts" (click)="close()">{{ t('menu.contact')}}</a></li>
+    </ul>
+  </div>
+</div>
+

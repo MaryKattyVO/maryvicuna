@@ -1,0 +1,33 @@
+<section id="education" class="education-section">
+  <div class="container">
+    <h2 class="title">{{ t('education.title') }}</h2>
+    <p class="subtitle-experience">
+      {{ t('education.subtitle' )}}
+    </p>
+    <div class="vertical-timeline vertical-timeline--animate vertical-timeline--two-columns">
+      <div
+        *ngFor="let edu of educationList; let i = index"
+        class="vertical-timeline-element"
+        [ngClass]="{ 'left': i % 2 === 0, 'right': i % 2 !== 0 }"
+      >
+        <span class="vertical-timeline-element-icon bounce-in">
+          <img [src]="edu.logo" alt="logo" />
+        </span>
+        <div class="vertical-timeline-element-content bounce-in">
+          <div class="vertical-timeline-element-content-arrow"></div>
+          <div class="timeline-header">
+            <img [src]="edu.logo" alt="logo" class="logo" />
+            <div class="timeline-header-text">
+              <h3 class="title">{{ edu.title }}</h3>
+              <p class="subtitle">{{ edu.subtitle }}</p>
+            </div>
+          </div>
+          <div class="description-item">
+            <p>{{ edu.description }}</p>
+          </div>
+          <span class="vertical-timeline-element-date">{{ edu.date }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
