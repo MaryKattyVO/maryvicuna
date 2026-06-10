@@ -19,6 +19,7 @@ export class ExperienceComponent {
   ngOnInit(): void {
     this.langSub = this.langService.translationsLoaded.subscribe(() => {
       this.experienceList = this.langService.getRaw('experience.list') || [];
+      console.log(this.experienceList);
     });
   }
 

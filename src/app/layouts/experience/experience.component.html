@@ -24,6 +24,13 @@
           </div>
           <div *ngFor="let section of exp.sections">
             <ul>
+              <div class="tech-container">
+                <span
+                  *ngFor="let technologie of section.technologies"
+                  class="tech-badge">
+                  {{ technologie }}
+                </span>
+              </div>
               <p class="name-company"> {{ section.company}}</p>
               <li *ngFor="let item of section.description" class="description-item">{{ item }}</li>
             </ul>
