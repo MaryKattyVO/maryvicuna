@@ -10,9 +10,9 @@
   "about": {
     "greeting": "Hola, soy",
     "name": "Mary Vicuña",
-    "role": "Frontend Developer",
-    "description": "Apasionada por crear experiencias digitales intuitivas, atractivas y de alta calidad. Con más de 5 años de experiencia desarrollando soluciones web modernas.",
-    "cv": "Descargar CV",
+    "role": "Software Engineer",
+    "description": "Software Engineer con más de 6 años de experiencia desarrollando aplicaciones web para banca, salud y telecomunicaciones. Especializada en Angular, Vue.js, TypeScript, RxJS, NgRx y arquitecturas basadas en Microfrontends.",
+    "cv": "CV Español",
     "file": "assets/cv/CV-ES-Mary-Katty-Vicuna-Ore.pdf"
   },
   "skills": {
@@ -20,10 +20,11 @@
     "subtitle": "Estas son algunas de las tecnologías y herramientas con las que he trabajado a lo largo de mi carrera como desarrolladora frontend.",
     "categories": {
       "frontend": "Frontend",
-      "backend": "Backend",
-      "devops": "DevOps",
-      "testing": "Testing",
-      "others": "Otros"
+      "stateManagement": "State Management & Architecture",
+      "backend": "Backend & APIs",
+      "testing": "Testing & Quality",
+      "devops": "DevOps & Cloud",
+      "monitoring": "Monitoring & Analytics"
     }
   },
   "experience": {
@@ -31,46 +32,61 @@
     "subtitle": "Estas son las experiencias laborales más relevantes que he tenido en los últimos años.",
     "list": [
       {
+        "title": "FRACTAL",
+        "subtitle": "Software Engineer",
+        "date": "Julio 2025 – Presente",
+        "logo": "assets/img/fractal.png",
+        "sections": [
+          {
+            "company": "Banco Banbif",
+            "technologies": [ "Angular 20", "TypeScript", "RxJS", "NgRx", "Microfrontends", "GitHub", "Azure DevOps" ],
+            "description": [
+              "Desarrollo y mantenimiento de aplicaciones empresariales para el sector bancario utilizando Angular 20.",
+              "Implementación de arquitectura basada en Microfrontends y componentes reutilizables.",
+              "Gestión de estado mediante NgRx (Store, Actions, Reducers, Selectors y Effects).",
+              "Integración de APIs REST, programación reactiva con RxJS y optimización de rendimiento.",
+              "Despliegues mediante Azure DevOps y trabajo colaborativo con equipos cross-functional."
+            ]
+          }
+        ]
+      },
+      {
         "title": "TATA",
         "subtitle": "Frontend Developer",
-        "date": "Septiembre 2021 – Presente",
+        "date": "Septiembre 2021 – Junio 2025",
         "logo": "assets/img/tata.jpg",
         "sections": [
           {
             "company": "Clinica Internacional",
+            "technologies": ["Angular16", "Microfrontends","TypeScript", "Ngrx", "Rxjs", "AzureDevops", "Google Cloud", "Google Analytics"],
             "description": [
-              "Desarrolladora líder del equipo front, participación y coordinación activa con los equipos involucrados y transversales.",
-              "Desarrollo de un sistema web app para Totems implementado en todas las sedes de la clinica para que el paciente pueda realizar check-in y pago de su cita con angular 16, microfront y módulos federados.",
-              "Desarrollo del sistema web Backoffice para la gestión administrativa de citas pagadas, que permita al personal administrativo visualizar las transacciones realizadas por el paciente y pueda según el caso realizar anulación de pagos y generar reportes de la transacciones realizadas con angular 16, microfront y módulos federados.",
-              "Integración de pagos con la plataforma de Izipay y estadísticas en tiempo real.",
-              "Implementación y configuración de Google tags para el seguimiento y análisis del comportamiento de usuarios.",
-              "Despliegue automáticos con Google Cloud.",
-              "Documentación en la plataforma de Confluence sobre las historias desarrolladas, elaboración de flujos, slicing, y mapeo de los detalles y validaciones del desarrollo de las historias realizadas.",
-              "Trabajo con la metodología ágil bajo el marco de trabajo SCRUM"
+              "Desarrollo de aplicaciones para Tótems de autoservicio utilizando Angular 16 y Microfrontends.",
+              "Integración del sistema de pagos Izipay para check-in y pago de citas médicas.",
+              "Desarrollo de backoffice para gestión administrativa de citas pagadas y generación de reportes.",
+              "Integración de APIs REST y optimización de rendimiento de aplicaciones.",
+              "Despliegues mediante Azure DevOps e implementación de Google Tags para analítica de usuarios."
             ]
           },
           {
             "company": "Interbank - Banca Empresa",
+            "technologies": ["Angular16", "TypeScript", "Ngrx", "Rxjs", "Azure Cloud", "Karma", "Jasmine", "Adobe Analytics"],
             "description": [
-              "Desarrollo del módulo de saldos y movimientos del sistema web Banca Empresa con Angular 16.",
-              "Desarrollo del módulo MT940 para consultar los estados de los archivos recibidos y procesados con angular 16",
-              "Desarrollo del rebranding del nuevo diseño del sistema web bancario con Angular Material.",
-              "Despligues automáticos con Azure.",
-              "Trabajo con la metodología ágil bajo el marco de trabajo SCRUM"
+              "Desarrollo de módulos empresariales para consulta de saldos y movimientos consolidados.",
+              "Implementación de dashboard para monitoreo de archivos MT940.",
+              "Desarrollo de componentes reutilizables utilizando Angular y RxJS.",
+              "Implementación de pruebas unitarias con Jasmine y Karma.",
+              "Participación en el rebranding de la plataforma de Banca Empresa."
             ]
           },
           {
             "company": "Interbank - Banca Persona",
+            "technologies": ["Vue.js", "Azure Cloud", "Cipress", "Tailwind CSS", "Adobe Analytics", "New Relic"],
             "description": [
-              "Desarrollo del módulo de prepago de préstamos que permite al cliente amortizan su préstamo desde la web eliminando la necesidad de que acuda al banco. Implementando con Vue.js",
-              "Desarrollo del login con CIAM para que el banco pueda gestionar la identidad y el acceso de sus clientes a la web y puedan acceder de forma segura.",
-              "Desarrollo de SSO para prepago de préstamo y déposito a plazo para que el usuario pueda acceder a la web desde la app con un solo token e autenticación.",
-              "Implementación de Adobe Analytics para los diferentes módulos para la recopilación y analizar los datos de interacciones de los clientes.",
-              "Desarrollo del plan de acción pra la migración del sistema web del framework de vue.js hacia angular",
-              "Implementación de pruebas e2e con Cypress para la automatización de pruebas, simulación de la interacción entre diferentes componentes de la web.",
-              "Análisis, solución e implementación de los reportes generados mediante la plataforma de fluidAttacks sobre las vulnerabilidad encontradas en el sistema web para mejorar la seguridad.",
-              "Documentación en la plataforma de Confluence sobre las historias desarrolladas, elaboración de flujos, slicing, y mapeo de los detalles y validaciones del desarrollo de las historias realizadas.",
-              "Trabajo con la metodología ágil bajo el marco de trabajo SCRUM"
+              "Desarrollo del módulo de prepago de préstamos para canales digitales.",
+              "Implementación de módulos de autenticación y seguridad para banca web.",
+              "Integración de Adobe Analytics para seguimiento y análisis de comportamiento de usuarios",
+              "Automatización de pruebas E2E utilizando Cypress.",
+              "Participación en iniciativas de migración tecnológica desde Vue.js hacia Angular."
             ]
           }
         ]
@@ -83,12 +99,13 @@
         "sections": [
           {
             "company": "Movistar",
+            "technologies": [ "Angular 14", "SQL", "Visual Basic", "IBM", "Jira" ],
             "description": [
-              "Desarrollo del sistema web Convergente que permite registrar los servicios que ofrece movistar como la venta de paquetes de internet y celulares.",
-              "Desarrollo del sistema web Backoffice que permite al usuario visualizar los diferentes tipo de pedidos realizados en el sistema web convergerte y realizar la aprobación final",
-              "Despliegue a ambientes de QA, desarrollo y producción mediante la plataforma Cloud Foundry con pipelines en IBM Cloud",
-              "Análisis e la data, generación de reportes con la trazabilidad de errores, propuestas de soluciones y ejecución de queries SQL en PostgreSQL.",
-              "Trabajo con la metodología ágil bajo el marco de trabajo SCRUM"
+              "Desarrollo de backoffice para gestión comercial de servicios Movistar.",
+              "Implementación de sistema de gestión de precios y promociones.",
+              "Despliegues y soporte en entornos IBM.",
+              "Pruebas unitarias con Jasmine y Karma.",
+              "Trabajo bajo metodología Scrum y gestión de proyectos mediante Jira."
             ]
           }
         ]
@@ -101,11 +118,12 @@
         "sections": [
           {
             "company": "",
+            "technologies": ["Vue.js", "Boostrap","AWS Cloud", "Karma", "Jasmine"],
             "description": [
-              "Desarrollo del sistema web para la empresa de Linkminers para la industria minera que permite a los funcionarios mineros acceder a soluciones innovadoras paras sus operarios y a empresas proveedoras a ampliar el alcance de sus soluciones con Vue.js",
-              "Desarrollo de un LMS para la empresa de Alicorp, Mi Banco y VitaPro que permite a los usuarios subir cursos y gestionar el aprendizaje de los trabajadores.",
-              "Despliegues automáticos en entornos AWS de los proyectos en los diferentes ambientes QA, desarrollo y producción.",
-              "Trabajo con la metodología ágil bajo el marco de trabajo SCRUM"
+              "Desarrollo de la plataforma Linkminers para el sector minero utilizando Vue.js",
+              "Implementación de sistema LMS para Alicorp, VitaPro y Mi Banco.",
+              "Gestión de despliegues en entornos AWS.",
+              "Trabajo bajo metodología Scrum y gestión de tareas con Jira."
             ]
           }
         ]
@@ -118,10 +136,13 @@
         "sections": [
           {
             "company": "",
+            "technologies": ["SQL Server", "Java", "Redes"],
             "description": [
-              "Desarrollo de un sistema para el control de inventarios de productos que permite un registro preciso y una gestión eficiciente del stock con Java y SQL Server",
-              "Mantenimiento e instalación de software según análisis y requererimientos, asegurando la operatividad y actualización de los sistemas de la empresa.",
-              "Instalación y mantenimiento al cableado de redes para optimizar la conectividad y el rendimiento de la infraestructura de TI."
+              "Desarrollo de sistema de control de inventarios utilizando SQL Server y Java.",
+              "Mantenimiento e instalación de software corporativo.",
+              "Administración y soporte de infraestructura tecnológica.",
+              "Instalación y mantenimiento de cableado de redes."
+
             ]
           }
         ]
@@ -134,11 +155,11 @@
         "sections": [
           {
             "company": "",
+            "technologies": ["SQL Server", "Java", "Redes"],
             "description": [
-              "Desarrollo de un sistema de facturación e inventario de productos ferreteros utilizando SQL Server y Java, permitiendo el registro preciso de ventas y una gestión eficiente de stock.",
-              "Mantenimiento y configuración al sistema Contable Monica 9, garantizando su correcto funcionamiento y actualización para la gestión financiera de la empresa.",
-              "Mantenimiento e instalación de software según análisis y requererimientos, asegurando la operatividad y actualización de los sistemas de la empresa.",
-              "Instalación y mantenimiento al cableado de redes para optimizar la conectividad y el rendimiento de la infraestructura de TI."
+              "Desarrollo de sistema de facturación e inventario utilizando SQL Server y Java.",
+              "Mantenimiento del sistema contable Mónica 9+",
+              "Soporte técnico, instalación y mantenimiento de software empresarial."
             ]
           }
         ]
